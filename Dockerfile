@@ -15,6 +15,6 @@ COPY --from=builder /app/dist /app/public
 WORKDIR /app
 RUN npm install pnpm -g && pnpm install
 
-EXPOSE 3002
+EXPOSE 1002
 
 CMD ["pnpm", "run", "start"]
